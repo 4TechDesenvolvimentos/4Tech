@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+:root{
+    --cor--logo:white; 
+}
+/*Inico Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff4500;
+    color: white;
+}
+
+header .logo p img{
+    font-size: 2.5rem;
+    margin-left: 10px;
+}
+
+header .menu nav ul{
+  display: inline-flex;
+  gap: 15px;
+  margin-top: 25px;
+  margin-right: 30px;
+}
+
+header .menu nav ul li:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+    border-bottom: 2px solid white;
+}
+/*Final Header*/
+
+/*Inico Main*/
+
+/*efeitoDigitação*/
+main .efeitoDigitacao{
+    background-color: orangered;
+    color: white;
+    height: 400px;
+}
+    
+main .efeitoDigitacao h6, span{
+    display: inline-flex;
+    margin-top: 60px;
+    margin-left: 10px;
+    font-size: 2rem;
+}
+main .efeitoDigitacao h6{
+    margin-left: 115px;
+    border-bottom: 2px solid white;
+}
+
+main .efeitoDigitacao span{
+    font-size: 3rem;
+}
+
+main .efeitoDigitacao p{
+    margin-top: 10px;
+    margin-left: 115px;
+    width: 800px;
+    font-size: 1.2rem;
+}
+
+.efeitoDigitacao span::before{
+    content: "";
+    animation: palavras 20s infinite;
+    color: white;
+}
+
+@keyframes palavras {
+    0%, 20%{
+        content: "Qualidade";
+    }
+    21%, 40%{
+        content: "Ética";
+    }
+    41%, 60%{
+        content: "Flexibilidade";
+    }
+    61%, 80%{
+        content: "Transparência";
+    }
+    81%, 100%{
+        content: "Inovação";
+    }
+}
+/*Final efeitoDigitação*/
+
+/*Inico BTN*/
+main .btn{
+    margin-top: 10px;
+    margin-left: 115px;
+}
+
+main .btn button{
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border-radius: 10px 0px 10px 0px;
+    border-color: orange;
+    box-shadow: orange 0px 5px 15px;
+}
+
+main .btn button:hover{
+    transform: scale(1.1);
+}
+/*Final BTN*/
+
+/*Inicio CONTAINERSERVICOS*/
+main .containerServicos{
+    background-color: orange;
+}
+
+main .containerServicos p{
+    margin-left: 115px;
+    width: 100vw;
+    height: 80px;
+    color: white;
+    font-size: 2rem;
+}
+
+main .containerServicos p:nth-child(2){
+    font-size: 1.1rem;
+    width: 800px;
+    margin-bottom: 30px;
+}
+/*Final CONTAINERSERVICOS*/
+
+/*Inico CONTAINEROPCAO*/
+main .containerOpcao{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+
+main .containerOpcao img{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+main .containerOpcao .txtOpcao, .infoOpcao{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+main .containerOpcao .txtOpcao, .infoOpcao p{
+    text-align: center;
+}
+
+main .containerOpcao .infoOpcao p{
+    text-align: left;
+    margin-bottom: 50px;
+    width: 400px;
+}
+
+main .containerOpcao .borda{
+    border: 1px solid white;
+    box-shadow: orangered 0px 5px 15px;
+    border-radius: 10px 0px 10px 0px;
+    padding: 20px;
+    height: 80px;
+    margin-bottom: 70px;
+}
+
+main .containerOpcao .infoOpcao{
+    font-size: 1.2rem;
+    font-weight: 300;
+    height: 10;
+}
+
+main .containerOpcao .borda:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
+    color: orangered;
+}
+
+main .containerOpcao .infoOpcao p:hover{
+    color: orangered;
+    border-bottom: 1px solid orangered;
+}
+/*Final CONTAINEROPCAO*/
+
+/*Inico CONTAINERESCOLHER*/
+main .containerEscolher{
+ background-color: orange;
+ height: 320px;
+ display: flex;
+}
+
+main .containerEscolher .pergunta{
+    margin-left: 115px;
+    font-size: 2rem;
+    color: white;
+    margin-top: 10px;
+}
+
+main .containerEscolher .opEscolha{
+    margin-left: 115px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 10px;
+    color: white;
+    width: 1000px;
+    font-size: 1.1rem;
+}
+
+main .containerEscolher button{
+    margin-top: 10px;
+    margin-left: 115px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px 0px 10px 0px;
+    border-color: orangered;
+    box-shadow: orangered 0px 5px 15px;
+}
+
+main .containerEscolher button:hover{
+    transform: scale(1.1);
+}
+/*Fim CONTAINERESCOLHER*/
+
+/*Inico CONTAINERTRABALHOS*/
+main .containerTrabalhos{
+    background-color: #8E236B;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+main .containerTrabalhos div p{
+    color: white;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+/*Fim CONTAINERTRABALHOS*/
+
+/*Final Main*/
+
